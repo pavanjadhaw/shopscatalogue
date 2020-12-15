@@ -1,0 +1,8 @@
+fragment SiteSnippet on site {
+  id
+  name
+  url
+  description
+  category
+  category_normalized
+}

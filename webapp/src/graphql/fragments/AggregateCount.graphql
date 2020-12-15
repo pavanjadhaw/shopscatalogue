@@ -1,0 +1,5 @@
+fragment AggregateCount on site_aggregate {
+  aggregate {
+    count
+  }
+}

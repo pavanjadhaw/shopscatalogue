@@ -1,0 +1,37 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Pavan Jadhaw <pavanjadhaw96@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.6",
+    "@chakra-ui/react": "^1.0.3",
+    "@emotion/react": "^11.1.2",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^2.9.5",
+    "graphql": "^15.4.0",
+    "next": "10.0.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.1.0",
+    "react-intersection-observer": "^8.31.0",
+    "react-masonry-css": "^1.0.14"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.19.4",
+    "@graphql-codegen/introspection": "1.18.1",
+    "@graphql-codegen/typescript": "1.19.0",
+    "@graphql-codegen/typescript-operations": "1.17.12",
+    "@graphql-codegen/typescript-react-apollo": "2.2.1",
+    "@types/node": "^14.14.13",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
+}

@@ -1,0 +1,19 @@
+query SitesByCategory(
+  $limit: Int!
+  $offset: Int!
+  $category_normalized: String!
+) {
+  site_aggregate(
+    where: { category_normalized: { _eq: $category_normalized } }
+  ) {
+    ...AggregateCount
+  }
+
+  site(
+    limit: $limit
+    offset: $offset
+    where: { category_normalized: { _eq: $category_normalized } }
+  ) {
+    ...SiteSnippet
+  }
+}

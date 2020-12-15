@@ -1,0 +1,5 @@
+query SiteById($id: Int!) {
+  site_by_pk(id: $id) {
+    ...SiteSnippet
+  }
+}

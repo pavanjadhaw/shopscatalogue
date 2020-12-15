@@ -1,0 +1,9 @@
+query Sites($limit: Int!, $offset: Int!) {
+  site_aggregate {
+    ...AggregateCount
+  }
+
+  site(limit: $limit, offset: $offset) {
+    ...SiteSnippet
+  }
+}
