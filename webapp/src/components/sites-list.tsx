@@ -29,6 +29,7 @@ function SitesList({
 
   let next;
   const maxPage = count / limit;
+
   if (page < maxPage) {
     next = (
       <HStack spacing={4}>
@@ -83,23 +84,25 @@ function SitesList({
           </chakra.p>
         </Highlight>
         <HStack spacing={4} mt={10}>
-          <NextLink href={`/sites/page/${page - 1}`} passHref>
-            <Button
-              as="a"
-              leftIcon={<FiArrowLeft />}
-              colorScheme="cyan"
-              size="md"
-              variant="ghost"
-              shadow="md"
-              bgColor="white"
-              _hover={{
-                shadow: 'xl',
-                transform: 'scale(1.1)',
-              }}
-            >
-              Previous
-            </Button>
-          </NextLink>
+          {Math.floor(maxPage) > 0 && (
+            <NextLink href={`/sites/page/${page - 1}`} passHref>
+              <Button
+                as="a"
+                leftIcon={<FiArrowLeft />}
+                colorScheme="cyan"
+                size="md"
+                variant="ghost"
+                shadow="md"
+                bgColor="white"
+                _hover={{
+                  shadow: 'xl',
+                  transform: 'scale(1.1)',
+                }}
+              >
+                Previous
+              </Button>
+            </NextLink>
+          )}
 
           <NextLink href="/" passHref>
             <Button
