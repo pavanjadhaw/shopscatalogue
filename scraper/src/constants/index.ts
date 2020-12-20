@@ -13,5 +13,6 @@ export const shopsmallecommUrl = 'https://shopsmallecomm.privy.com/';
 export const uniqueUrlViolationMessage =
   'Uniqueness violation. duplicate key value violates unique constraint "site_url_key"';
 
-export const SCRAPINGBEE_API_KEY =
-  'N9YMEFKQBZ0J3MOAXNEHDI3BFBBS2MT5WQLOC3COBH1WEP897V49XOC4LB27ITFTV43UEWFN8DHFWGKB';
+export const SCRAPINGBEE_API_KEY = process.env.SCRAPINGBEE_API_KEY;
+export const SHOPSCATALOGUE_API_ENDPOINT =
+  process.env.SHOPSCATALOGUE_API_ENDPOINT;
